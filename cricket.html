@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cricket</title>
+  <style>
+    .field{
+      border: 2px solid blue;
+      background: greenyellow;
+    
+    }
+    .bat{
+      transition:transform 0.1s ;
+    }
+    
+    .field:hover .bat{
+      transform: rotate(-60deg);
+      transform-origin: top right;
+    }
+    .field:hover .ball{
+      transform: translate(1500px,-600px);
+    }
+    .ball{
+      width: 50px;
+      height: 50px;
+      background: red;
+      border-radius: 50%;
+      position: relative;
+      left: 510px;
+     
+      
+      transition: transform 2s ease-in-out 0.1s;
+      
+     
+    }
+  </style>
+</head>
+<body>
+  <h1>circket animation by transform and transition property</h1>
+  <div class="field">
+    <img src="bat.png" alt="" class="bat">
+    <div class="ball">
+     
+    </div>
+  </div>
+</body>
+</html>
